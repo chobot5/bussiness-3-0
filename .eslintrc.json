@@ -9,7 +9,7 @@
   ],
   "ignorePatterns": ["*json", "*.css", "*scss", "*.png", "*.jpg", "*.svg", "*.js", "graphql-types.ts"],
   "rules": {
-    "no-console": 2,
+    "no-console": 1,
     "quotes": [1, "single"],
     "semi": [1, "never"],
     "one-var-declaration-per-line": 1,

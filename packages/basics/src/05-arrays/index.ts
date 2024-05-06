@@ -1,0 +1,27 @@
+import {
+  businessLevels,
+  doubleBusinessValue,
+  filterNonDeveloperLevels,
+  findDeveloperLevel,
+  findLevelValue3Index,
+  hasNotDeveloperLevels,
+  hasOnlyDeveloperLevels,
+  logEachLevel,
+  sortByLevelDesc,
+  sumLevelValues,
+} from './arrays'
+
+const arrays = {
+  businessLevels,
+  doubleBusinessValue,
+  filterNonDeveloperLevels,
+  findDeveloperLevel,
+  hasOnlyDeveloperLevels,
+  hasNotDeveloperLevels,
+  findLevelValue3Index,
+  sortByLevelDesc,
+  sumLevelValues,
+  logEachLevel,
+}
+
+export default arrays
