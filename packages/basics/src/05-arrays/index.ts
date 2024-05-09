@@ -4,6 +4,7 @@ import {
   filterNonDeveloperLevels,
   findDeveloperLevel,
   findLevelValue3Index,
+  firstBusinessLevel,
   hasNotDeveloperLevels,
   hasOnlyDeveloperLevels,
   logEachLevel,
@@ -22,6 +23,7 @@ const arrays = {
   sortByLevelDesc,
   sumLevelValues,
   logEachLevel,
+  firstBusinessLevel,
 }
 
 export default arrays

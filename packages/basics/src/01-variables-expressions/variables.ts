@@ -1,4 +1,4 @@
-const numberA = 99
+const numberA = 89
 const numberB = 100
 
 export const sum = numberA + numberB
@@ -12,7 +12,7 @@ const stringB = 'World'
 
 export const concatString = stringA + ' ' + stringB
 // export const concatString = `${stringA} ${stringB}`
-// export const concatString = stringA.concat(' ', stringB)
+//export const concatString = stringA.concat(' ', stringB)
 
 export let redaclared = 'I am a variable'
 redaclared = 'I am a variable with a new value'
@@ -21,11 +21,20 @@ const iAmDeveloper = true
 //const nullValue = null
 //const undefinedValue = undefined
 
-// const numberList = [1, 2, 3, 4, 5]
-// const booleanList = [true, false, true, false]
+//const numberList = [1, 2, 3, 4, 5]
+//const booleanList = [true, false, true, false]
 
 const productOwnerSkill = 'product owner'
 const skillList = ['react', 'gem', 'css', 'html', 'typescript', productOwnerSkill]
+
+export const person = {
+  name: 'John',
+  age: 30,
+  isDeveloper: true,
+  neco: 666,
+  skills: skillList,
+  partners: [{ name: 'Jane', age: 29 }],
+}
 
 const objectWithNesting = { a: 66, b: 77, c: { d: 'nestedD', e: [{ deeplyNested: 'deeplyNestedValue' }] } }
 

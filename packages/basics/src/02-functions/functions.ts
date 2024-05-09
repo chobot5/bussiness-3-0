@@ -2,8 +2,8 @@ export function sum(a: number, b: number) {
   return a + b
 }
 
-// export const inlineSum = (a: number, b: number) => a + b
-// export const logMessage = (message: string) => console.log(message)
+export const inlineSum = (a: number, b: number) => a + b
+export const logMessage = (message: string) => console.log(message)
 
 type AnimalType = 'dog' | 'cat' | 'bird' | 'fish'
 
@@ -33,7 +33,7 @@ export const createPerson = (
   animals: Animal[],
 ): Person => {
   return {
-    age,
+    age: age,
     firstName,
     lastName,
     skills,

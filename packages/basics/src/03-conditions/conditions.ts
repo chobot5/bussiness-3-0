@@ -53,8 +53,29 @@ export const sayHelloWhenTrue = (condition: boolean) => (condition ? 'Hello' : '
 
 export const isBlackOrBlue = (color: 'black' | 'blue' | 'green' | 'red') => color === 'black' || color === 'blue'
 
-export const printOnlyDefined = (value: string | undefined) => value && value
-export const printOnlyDefinedWithDefault = (notDefinedMessage: string, value?: string) => value ?? notDefinedMessage
+// not work with numbers
+export const getOnlyDefined = (value: string | undefined) => value && value
+export const getOnlyDefinedWithDefault = (notDefinedMessage: string, value?: string) => value ?? notDefinedMessage
 
 export const jsFail1 = (value: number) => (value ? 'number exists' : 'number does not exist')
 export const jsFail2 = (value: string) => (value ? 'string exists' : 'string does not exist')
+
+const MULTIPLIER = 2
+export const conditionFnWithScopes = (a: number, b: number) => {
+  function getOnlyNegativeNumber(value: number) {
+    if (value < 0) {
+      return value
+    }
+    return null
+  }
+
+  if (getOnlyPositiveNumber(a)) {
+    return a * MULTIPLIER
+  }
+
+  if (getOnlyNegativeNumber(b)) {
+    return b * MULTIPLIER
+  }
+
+  return 0
+}

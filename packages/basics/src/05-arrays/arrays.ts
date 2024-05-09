@@ -42,3 +42,40 @@ export const sortByLevelDesc = businessLevels.sort((a, b) => b.value - a.value)
 export const sumLevelValues = businessLevels.reduce((acc, curr) => {
   return acc + curr.value
 }, 0)
+
+const firstIndex = 0
+export const firstBusinessLevel = businessLevels[firstIndex]
+// export const firstBusinessLevel = businessLevels.at(firstIndex)
+// "abc"[1] // "b"
+
+// classic loops
+// ............
+
+// for
+const doForLoop = (iterationsCount: number) => {
+  for (let step = 0; step < iterationsCount; step++) {
+    console.log(`For: iteration ${step}`)
+  }
+}
+// doForLoop(5)
+
+// do - while
+const doWhileDoLoop = (iterationsCount: number) => {
+  let i = 0
+  do {
+    console.log(`DoWhile: iteration ${i}`)
+    i++
+  } while (i < iterationsCount)
+}
+
+// doWhileDoLoop(5)
+
+// while
+const doWhileLoop = (iterationsCount: number) => {
+  let i = 0
+  while (i < iterationsCount) {
+    console.log(`While: iteration ${i}`)
+    i++
+  }
+}
+// doWhileLoop(5)

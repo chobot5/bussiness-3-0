@@ -5,8 +5,8 @@ import {
   isPersonOld,
   jsFail1,
   jsFail2,
-  printOnlyDefined,
-  printOnlyDefinedWithDefault,
+  getOnlyDefined,
+  getOnlyDefinedWithDefault,
   getBusinessLevel,
 } from './conditions'
 
@@ -16,8 +16,8 @@ const conditions = {
   notPositiveNumber: getOnlyPositiveNumber2(-1),
   taskSource: getTaskSource({ epic: null, isInternal: true, isDps: false }),
   businessLevel: getBusinessLevel('useReact'),
-  onlyDefined: printOnlyDefined('aaa'),
-  onlyDefined2: printOnlyDefinedWithDefault('not defined'),
+  onlyDefined: getOnlyDefined('aaa'),
+  getOnlyDefinedWithDefault: getOnlyDefinedWithDefault('not defined'),
   jsFail1: jsFail1(0),
   jsFail2: jsFail2(''),
 }
