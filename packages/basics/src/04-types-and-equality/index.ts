@@ -55,6 +55,7 @@ const typesAndEquality = {
     spread2: person4,
     spread3: skill3,
   },
+  casting: myFunctions.casting,
 }
 
 export default typesAndEquality
