@@ -19,3 +19,12 @@ const outerFn4 = (a: number, b: number) => {
   const sumInner = (a: number, b: number) => a + b
   return sumInner(a, b) * MULTIPLIER
 }
+
+const fn1 = (a: string) => a
+const fn2 = (a: string) => {
+  return a
+}
+
+function fn3(a: string) {
+  return a
+}

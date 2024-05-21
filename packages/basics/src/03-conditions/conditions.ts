@@ -18,7 +18,13 @@ export function getOnlyPositiveNumber2(myNumber: number) {
 
 export const getOnlyPositiveNumber3 = (myNumber: number) => (myNumber > 0 ? myNumber : null)
 
-export const getTaskSource = (task: { epic?: string | null; isInternal: boolean; isDps: boolean }) => {
+interface Task {
+  epic?: string | null
+  isInternal: boolean
+  isDps: boolean
+}
+
+export const getTaskSource = (task: Task) => {
   if (task.epic && task.isDps) {
     return 'dps'
   } else if (task.epic && !task.isDps) {
@@ -53,9 +59,21 @@ export const sayHelloWhenTrue = (condition: boolean) => (condition ? 'Hello' : '
 
 export const isBlackOrBlue = (color: 'black' | 'blue' | 'green' | 'red') => color === 'black' || color === 'blue'
 
-// not work with numbers
-export const getOnlyDefined = (value: string | undefined) => value && value
-export const getOnlyDefinedWithDefault = (notDefinedMessage: string, value?: string) => value ?? notDefinedMessage
+export const getValueIfExists = (value?: string | number | null) => {
+  if (value) {
+    // not work with 0 getValueIfExists(0) // undefined
+    // not work with "" getValueIfExists("") // undefined
+    // getValueIfExists(3) // 3
+    return value
+  }
+
+  // getValueIfExists(null) // undefined
+}
+
+// alternative solution for getValueIfExists - using short-circuit evaluation (operator && act as if(value) return value)
+// (value: string | undefined) => value && 666 // return 666 if value exists
+export const getValueIfExists2 = (value: string | undefined) => value && value
+export const getOnlyDefinedWithDefault = (defaultMessage: string, value?: string) => value ?? defaultMessage
 
 export const jsFail1 = (value: number) => (value ? 'number exists' : 'number does not exist')
 export const jsFail2 = (value: string) => (value ? 'string exists' : 'string does not exist')
