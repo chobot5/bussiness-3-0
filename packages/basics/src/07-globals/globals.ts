@@ -1,7 +1,10 @@
+// String, Boolean, Number, Object, Array, Function, Date, RegExp, Error, Math, JSON, process, Promise, UrlSearchParams, Url, XMLHttpRequest, Map, Set
+// browser - window, document
+// global functions - setTimeout, setInterval, clearTimeout, clearInterval, fetch,encodeURIComponent, decodeURIComponent,...
+
+// window - sessionStorage, localStorage, ...
+
 const num = 3.8
-
-// String, Boolean, Number, Object, Array, Function, Date, RegExp, Error, Math, JSON
-
 export const mathObj = () => {
   const roundNum = Math.round(num)
   const floorNum = Math.floor(num)
@@ -12,3 +15,23 @@ export const mathObj = () => {
 
   return { num, roundNum, floorNum, ceilNum, absNum, minFrom, maxFrom }
 }
+
+// ignore duplicate values
+/*
+const helloSet = new Set(['hello', 'world'])
+helloSet.size // 2
+helloSet.add('hello') // helloSet.size = 2
+
+const logAfter = (seconds: number, message: string) => {
+  setTimeout(() => {
+    console.log(message)
+  }, seconds * 1000)
+}
+
+
+const retryLog = (seconds: number, message: string) => {
+  setInterval(() => {
+    console.log(message)
+  }, seconds * 1000)
+}
+*/
