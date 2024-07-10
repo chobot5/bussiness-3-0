@@ -166,3 +166,7 @@ const animalsMap: AnimalValue = {
   jmenov2: { name: 'doggie', type: 'dog', poop: false },
   kocka: { name: 'kitty', type: 'cat', eat: true },
 }
+
+const necoaneco = 65756
+const zmena2 = 666
+const zmena3 = 666
