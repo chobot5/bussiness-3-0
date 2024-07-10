@@ -169,3 +169,4 @@ const animalsMap: AnimalValue = {
 
 const necoaneco = 65756
 const zmena2 = 666
+const zmena3 = 666
