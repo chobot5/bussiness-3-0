@@ -1,3 +1,25 @@
 .skills {
     text-align: left;
 }
+
+.item {
+    font-weight: 700;
+}
+
+.alert {
+    display: flex;
+    gap:20px;
+    color: red;
+}
+
+.default {
+    display: flex;
+    gap:20px;
+    color: blue;
+}
+
+.low {
+    display: flex;
+    gap:20px;
+    color: green;
+}
